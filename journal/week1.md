@@ -11,17 +11,16 @@ I followed these steps to do it :
 2. Built the docker image of the dockerfile with the following commmand 
 ```
 docker build -t backennd-image .
-
 ```
 3. Built the image container with the following command :
 ```
 docker run --name backennd-container -d backennd-image
-
 ```
 4. Attached a shell to the container by right-clicking on the container from the docker extension window
 5. Ran the command in the shell:
 ```
 python3 -m flask run --host=0.0.0.0 --port=4568
 ```
+Screenshot : 
 
-    
+![Screenshot (1)](https://user-images.githubusercontent.com/91217901/221365157-0ce458a4-e0ae-4e69-8421-720ea448c0a6.png)
