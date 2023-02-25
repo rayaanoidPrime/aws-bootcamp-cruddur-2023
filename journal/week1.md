@@ -35,12 +35,14 @@ I tagged the backend server image after building it and pushed it to my dockerhu
 build -t backend-image:1.0 
 ```
 tagging it with 1.0 initially.
+
 2. logged in to my docker hub account using command docker login and the enntering my username and password.
+
 3. Tagged the built image again using the command
+```
+docker tag backend-image:1.0 rayaan4dev/backend-image:1.1
  ```
- docker tag backend-image:1.0 rayaan4dev/backend-image:1.1
- ```
- I changed the tag to add in my dockerhub username "rayaan4dev" so that docker pushes it to the correct repo on dockerhub
+I changed the tag to add in my dockerhub username "rayaan4dev" so that docker pushes it to the correct repo on dockerhub
 4.Pushed it to the dockerhub using command :
 ```
 docker push rayaan4dev/backend-image:1.1
