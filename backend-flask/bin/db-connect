@@ -6,5 +6,5 @@ if [ "$1" = "prod" ]; then
 else
   URL=$CONNECTION_URL
 fi
-
+echo "$URL"
 psql $URL
