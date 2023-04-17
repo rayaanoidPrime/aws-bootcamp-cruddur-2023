@@ -33,7 +33,6 @@ class Ddb:
     response = client.query(**query_params)
     items = response['Items']
 
-
     results = []
     for item in items:
       last_sent_at = item['sk']['S']

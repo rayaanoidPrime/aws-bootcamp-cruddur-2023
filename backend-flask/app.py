@@ -3,6 +3,7 @@ from flask import request
 from flask_cors import CORS, cross_origin
 import os
 import sys
+from services.users_short import *
 from services.home_activities import *
 from services.user_activities import *
 from services.notification_activities import *
@@ -163,6 +164,8 @@ def data_messages(message_group_uuid):
     # unauthenicatied request
     app.logger.debug(e)
     return {}, 401
+
+
 @app.route("/api/messages", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_create_message():
